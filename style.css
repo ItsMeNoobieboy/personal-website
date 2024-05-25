@@ -1,0 +1,112 @@
+body {
+    background-color: azure;
+    margin: 0px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+}
+
+.intro {
+    background-color: dodgerblue;
+    padding: 1.5rem;
+    text-align: center;
+    color: azure;
+}
+
+.wave {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.wave .shape-fill {
+    fill: dodgerblue;
+}
+
+.name {
+    text-align: center;
+    font-size: 7.5vw;
+    background-size: 200% 100%;
+    font-weight: 900;
+}
+
+.lists {
+    align-items: center;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    list-style-position: inside;
+    list-style: inside;
+}
+
+.lists a {
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+
+.rainbow {
+    background-image: -webkit-repeating-linear-gradient(
+        left,
+        #f00,
+        #ff2b00,
+        #f50,
+        #ff8000,
+        #fa0,
+        #ffd500,
+        #ff0,
+        #d4ff00,
+        #af0,
+        #80ff00,
+        #5f0,
+        #2bff00,
+        #0f0,
+        #00ff2a,
+        #0f5,
+        #00ff80,
+        #0fa,
+        #00ffd5,
+        #0ff,
+        #00d5ff,
+        #0af,
+        #0080ff,
+        #05f,
+        #002aff,
+        #00f,
+        #2b00ff,
+        #50f,
+        #8000ff,
+        #a0f,
+        #d400ff,
+        #f0f,
+        #ff00d4,
+        #f0a,
+        #ff0080,
+        #f05,
+        #ff002b,
+        #f00
+    );
+    -webkit-animation: rainbowa 8s linear infinite;
+    animation: rainbowa 8s linear infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: #0000;
+}
+
+@keyframes rainbowa {
+    0% {
+        background-position: 0% 25%;
+    }
+    100% {
+        background-position: 200% 225%;
+    }
+}
